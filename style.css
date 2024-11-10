@@ -9,12 +9,7 @@
 
 body {
     font-family: "Space Mono", monospace;
-    background-image: url('images/Background.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    height: 100vh;
+    height: 100%;
 }
 
 h4 {
@@ -63,11 +58,11 @@ header h1 {
 
 .main {
     width: 100vw;
-    height: 100vh;
-    overflow: hidden;
+    height: 100vh; /* Take up full viewport height */
+    overflow-y: auto; /* Enable vertical scrolling when needed */
     position: relative;
-    overflow-y: auto;
 }
+
 
 .point {
     width: 2px;
