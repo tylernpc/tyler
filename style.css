@@ -420,3 +420,9 @@ a:active {
         margin-right: 12em;
     }
 }
+
+@media screen and (max-width: 599px) {
+    .experience-container {
+        margin-bottom: 4em;
+    }
+}
