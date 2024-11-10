@@ -58,9 +58,10 @@ header h1 {
 
 .main {
     width: 100vw;
-    height: 100vh; /* Take up full viewport height */
-    overflow-y: auto; /* Enable vertical scrolling when needed */
+    height: 100vh;
+    overflow: hidden;
     position: relative;
+    overflow-y: auto;
 }
 
 
