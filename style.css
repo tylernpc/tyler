@@ -342,4 +342,8 @@ a:active {
     body {
         overflow-y: auto;
     }
+
+    .resume {
+        padding-bottom: 2em;
+    }
 }
