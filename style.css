@@ -274,12 +274,6 @@ a:active {
         overflow-x: hidden;
     }
 
-    html,
-    body {
-        position: relative;
-        overflow-x: hidden;
-    }
-
     .left-half-hero h1 {
         margin-bottom: 0.25em;
     }
@@ -313,5 +307,14 @@ a:active {
 
     :root {
         --size: 70vw;
+    }
+}
+
+@media screen and (max-width: 751px) {
+    /* THIS LINE OF CODE FIXES OVERFLOW-X ON MOBILE */
+    html,
+    body {
+        position: relative;
+        overflow-x: hidden;
     }
 }
