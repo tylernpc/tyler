@@ -273,8 +273,16 @@ a:active {
         overflow-y: auto;
         overflow-x: hidden;
     }
-
+/* 
     body {
+        overflow-x: hidden;
+        
+    } 
+*/
+
+    html,
+    body {
+        position: relative;
         overflow-x: hidden;
         overflow-y: auto;
     }
@@ -319,14 +327,16 @@ a:active {
     }
 }
 
+/*
 @media screen and (max-width: 751px) {
-    /* THIS LINE OF CODE FIXES OVERFLOW-X ON MOBILE */
+     THIS LINE OF CODE FIXES OVERFLOW-X ON MOBILE 
     html,
     body {
         position: relative;
         overflow-x: hidden;
     }
 }
+*/
 
 @media screen and (max-width: 1531px) {
     body {
