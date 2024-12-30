@@ -1,105 +1,76 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-/* New Update */
+
 * {
-    box-sizing: border-box;
     color: rgb(31, 31, 31);
-    margin: 0em;
-    padding: 0em;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     font-family: "Space Mono", monospace;
-    height: 100%;
-
-    width:100%;
-    overflow-x:hidden;
-    overflow-y:hidden;
+    overflow-x: hidden;
 }
 
-h4 {
-    font-family: 'Playfiar Display', serif;
-    align-self: center;
+a {
+    color: black;
 }
 
-header h1 {
-    font-family: "Playfair Display", serif;
-    font-size: 65px;
-    letter-spacing: 4px;
-    margin-bottom: 0.15em;
-    margin-top: 0.25em;
-}
-
-.experience-container {
-    margin-top: 1em;
-    padding: 0em 2em 0em 2em;
-}
-
-.experience-info {
-    padding: 0.5em 0em 2em 0em;
-}
-
-.intro-container {
-    padding: 1em 2em 1em 2em;
-}
-
-.job-title {
-    margin: 0em 0em 0.55em 0em;
-}
-
-.last-experience-item {
-    padding-bottom: 1em;
-}
-
-.left-half {
-    margin-left: 2em;
-    padding: 1em 0;
+.hero {
+    display: flex;
+    justify-content: space-between;
+    margin: 0em 12em;
+    margin-top: 12em;
 }
 
 .line {
-    border-color: rgba(31, 31, 31, 0.355);
-    margin: 0em 2em;
-}
-
-.main {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    position: relative;
-    overflow-y: auto;
-}
-
-
-.point {
-    width: 2px;
-    height: 2px;
-    background-color: rgba(0, 0, 255, 0.8);
-    border-radius: 50%;
-}
-
-.point-container {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    gap: 10px;
-    width: 50vw;
-    height: 50vw;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: -1;
-}
-
-.social-items-computer {
     display: none;
 }
 
+.left-half-hero,
+.right-half-hero {
+    flex: 1;
+}
+
+.left-half-hero h1 {
+    font-family: 'Playfiar Display', serif;
+    font-size: 64px;
+    letter-spacing: 2px;
+    margin-bottom: 0.5em;
+}
+
+.left-half-hero h3 {
+    margin-bottom: 2em;
+}
+
 .social-items-mobile {
-    margin-top: 1em;
+    display: none;
+}
+
+.social-items {
+    display: flex;
+    margin-top: 18em;
 }
 
 .social-item {
-    margin-right: 1em;
-    padding-bottom: 1em;
+    padding: 0px 7px;
+}
+
+.experience-container {
+    margin-top: 2em;
+}
+
+.experience-item {
+    margin-top: 2em;
+}
+
+.experience-title {
+    font-family: 'Playfiar Display', serif;
+    margin-bottom: 10px;
+}
+
+.resume {
+    font-family: 'Playfiar Display', serif;
+    margin-top: 2em;
 }
 
 ::selection {
@@ -123,11 +94,11 @@ a:hover {
 }
 
 a:active {
-    color: f2f2f2;
+    color: #f2f2f2;
 }
 
 :root {
-    --size: 300px;
+    --size: 50vw;
 }
 
 @supports (mix-blend-mode: soft-light) and (filter: blur(1px)) {
@@ -277,157 +248,59 @@ a:active {
     }
 }
 
-/* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
-@media screen and (min-width: 600px) {
-    :root {
-        --size: 450px;
-    }
+.point {
+    width: 2px;
+    height: 2px;
+    background-color: rgba(0, 0, 255, 0.8);
+    border-radius: 50%;
 }
 
-/* tablet, landscape iPad, lo-res laptops ands desktops */
-@media screen and (min-width: 801px) {
-    .social-items-computer {
-        display: flex;
-        margin-top: 2em;
+.point-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 10px;
+    width: 50vw;
+    height: 50vw;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+@media screen and (max-width: 1179px) {
+    .left-half-hero h1 {
+        margin-bottom: 0.25em;
     }
 
-    .main {
-        display: flex;
+    .left-half-hero h3 {
+        margin-bottom: 1em;
     }
 
+    .hero,
     .line {
+        display: block;
+        margin: 2em 3em;
+    }
+
+    .social-items {
         display: none;
     }
 
     .social-items-mobile {
-        display: none;
+        display: block;
     }
 
-    .left-half {
-        padding: 0em 1em;
-        margin: 3em 0em 3em 4em;
+    .line {
+        border: 0;
+        border-top: 1px solid black;
     }
 
-    .right-half {
-        padding: 0em 1em;
-        margin: 3em 2em 3em 1em;
+    .resume {
+        margin-bottom: 2em;
     }
-    .social-items-computer {
-        margin-top: 9em;
-    }
-}
 
-/* big landscape tablets, laptops, and desktops */
-@media screen and (min-width: 920px) {
     :root {
-        --size: 600px;
-    }
-
-    h1 {
-        margin-right: -1em;
-    }
-
-    header {
-        margin-right: -1em;
-        padding-right: 7em;
-    }
-
-    .base-p {
-        margin-right: -20em;
-    }
-
-    .job-title {
-        margin-right: -2em;
-    }
-
-    .left-half {
-        margin: 3em 0em 3em 4em;
-    }
-
-    .point-container {
-        width: 35vw;
-        height: 35vw;
-    }
-
-    .right-half {
-        padding: 0em 1em;
-        margin: 3em 0em 3em 0em;
-
-    }
-
-    .social-items-computer {
-        margin-top: 24em;
-    }
-}
-
-@media screen and (min-width: 1132px) {
-    .left-half {
-        padding: 0em 1em;
-        margin: 3em 0em 3em 4em;
-    }
-
-    .right-half {
-        padding: 0em 1em;
-        margin: 3em 4em 3em 2em;
-    }
-}
-
-@media screen and (min-width: 1300px) {
-    .left-half {
-        margin: 3em 0em 3em 6em;
-    }
-    
-    .right-half {
-        padding: 0em 1em;
-        margin: 3em 4em 3em 2em;
-    }
-}
-
-@media screen and (min-width: 1500px) {
-    h1 {
-        margin-right: -1em;
-    }
-
-    header {
-        margin-right: -1em;
-        padding-right: 20em;
-    }
-
-    .base-p {
-        margin-right: -20em;
-    }
-
-    .job-title {
-        margin-right: -2em;
-    }
-
-    .left-half {
-        margin: 3em 0em 3em 11em;
-    }
-
-    .experience-container {
-        margin-top: 4em;
-    }
-
-    .point-container {
-        width: 35vw;
-        height: 35vw;
-    }
-
-    .right-half {
-        padding: 0em 1em;
-        margin: 3em 4em 3em 0em;
-    }
-}
-
-@media screen and (min-width: 1500px) {
-    .right-half {
-        margin-right: 12em;
-    }
-}
-
-@media screen and (max-width: 599px) {
-    .experience-container {
-        margin-bottom: 6em;
+        --size: 70vw;
     }
 }
