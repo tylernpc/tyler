@@ -9,6 +9,7 @@
 body {
     font-family: "Space Mono", monospace;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 a {
@@ -269,6 +270,10 @@ a:active {
 }
 
 @media screen and (max-width: 1179px) {
+    body {
+        overflow-y: auto;
+    }
+    
     .left-half-hero h1 {
         margin-bottom: 0.25em;
     }
