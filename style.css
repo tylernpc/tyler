@@ -268,20 +268,24 @@ a:active {
     z-index: -1;
 }
 
+@media screen and (max-width: 1531px) {
+    body {
+        overflow-y: auto;
+    }
+
+    .resume {
+        padding-bottom: 2em;
+    }
+}
+
 @media screen and (max-width: 1179px) {
     * {
         overflow-y: auto;
-        overflow-x: hidden;
     }
-/* 
-    body {
-        overflow-x: hidden;
-        
-    } 
-*/
 
     html,
     body {
+        /* THIS LINE OF CODE FIXES OVERFLOW-X ON MOBILE MINUS THE OVERFLOW-Y */
         position: relative;
         overflow-x: hidden;
         overflow-y: auto;
@@ -325,25 +329,11 @@ a:active {
     :root {
         --size: 70vw;
     }
-}
-
-/*
-@media screen and (max-width: 751px) {
-     THIS LINE OF CODE FIXES OVERFLOW-X ON MOBILE 
-    html,
-    body {
-        position: relative;
-        overflow-x: hidden;
-    }
-}
-*/
-
-@media screen and (max-width: 1531px) {
-    body {
-        overflow-y: auto;
-    }
 
     .resume {
-        padding-bottom: 2em;
+        padding-bottom: 0em;
     }
 }
+
+/* FROM 1010 - 1178 THERE ARE TWO SCROLL BARS */
+/* max width 751 for mobile */
