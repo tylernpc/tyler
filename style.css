@@ -288,6 +288,10 @@ a:active {
         margin: 2em 3em;
     }
 
+    .bottom-line {
+        margin-bottom: -2em;
+    }
+
     .social-items {
         display: none;
     }
