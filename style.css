@@ -274,6 +274,11 @@ a:active {
         overflow-x: hidden;
     }
 
+    body {
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
     .left-half-hero h1 {
         margin-bottom: 0.25em;
     }
@@ -320,5 +325,11 @@ a:active {
     body {
         position: relative;
         overflow-x: hidden;
+    }
+}
+
+@media screen and (max-width: 1531px) {
+    body {
+        overflow-y: auto;
     }
 }
