@@ -52,11 +52,16 @@ li {
     list-style: none;
 }
 
+.landing-page {
+    height: 100vh;
+}
+
 .navbar {
     align-items: center;
     display: flex;
     justify-content: space-between;
-    margin: 1em 0 5em 5em;
+    margin: 0 8em;
+    padding-top: 4em;
 }
 
 .nav-right {
@@ -87,6 +92,7 @@ li {
 
 .hero {
     margin: 0 5em;
+    display: flex;
 }
 
 .top-hero {
@@ -95,4 +101,23 @@ li {
 
 .top-hero h1 {
     margin-bottom: 10px;
+}
+
+.location,
+.available,
+.lower-hero {
+    display: flex;
+}
+
+.location p,
+.available p {
+    padding-left: 10px;
+}
+
+.available {
+    margin-top: 1em;
+}
+
+.lower-hero {
+    margin-top: 2em;
 }
