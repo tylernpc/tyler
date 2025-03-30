@@ -53,14 +53,15 @@ li {
 }
 
 .landing-page {
+    border: solid red 2px;
     height: 100vh;
+    margin: 0 8em;
 }
 
 .navbar {
     align-items: center;
     display: flex;
     justify-content: space-between;
-    margin: 0 8em;
     padding-top: 4em;
 }
 
@@ -91,8 +92,9 @@ li {
 }
 
 .hero {
-    margin: 0 5em;
     display: flex;
+    justify-content: space-between;
+    margin-top: 10em;
 }
 
 .top-hero {
@@ -101,6 +103,10 @@ li {
 
 .top-hero h1 {
     margin-bottom: 10px;
+}
+
+.available-dot {
+    fill: red;
 }
 
 .location,
