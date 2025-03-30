@@ -53,7 +53,6 @@ li {
 }
 
 .landing-page {
-    border: solid red 2px;
     height: 100vh;
     margin: 0 8em;
 }
@@ -75,20 +74,17 @@ li {
 
 .nav-right-actions {
     display: flex;
-    margin-right: 5em;
+    align-items: center;
 }
 
-.nav-right-actions button {
-    background-color: var(--dark-gray-100);
-    border: transparent;
-    border-radius: 12px;
+.cta-btn {
     color: var(--gray-50);
+    background-color: var(--dark-gray-50);
+    border: none;
+    border-radius: 8px;
     font-weight: 200;
-    padding: 0 1em;
-}
-
-.nav-right-actions p {
-    padding: 0 1em;
+    padding: 8px 18px; 
+    line-height: 0.5;
 }
 
 .hero {
@@ -105,8 +101,9 @@ li {
     margin-bottom: 10px;
 }
 
-.available-dot {
-    fill: red;
+.hero-right img {
+    width: 300px;
+    height: auto;
 }
 
 .location,
